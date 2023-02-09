@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-
+app.get("/hello", (req, res) => {
+  res.send("Hello World!");
+});
 
 app.ws("/echo", (ws, res) => {
   ws.on("message", (msg) => {
