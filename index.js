@@ -11,7 +11,7 @@ app.use(express.json({ extended: false }));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// const port = process.env.PORT || 3002;
+const port = process.env.PORT || 9002;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -21,6 +21,6 @@ app.get("/hello", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(3002)
+app.listen(port)
 
 module.exports.handler = serverless(app);
