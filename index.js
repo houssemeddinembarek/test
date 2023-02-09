@@ -60,4 +60,4 @@ app.listen(port,  () => {
   console.log("connected to the backend  !");
 });
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
