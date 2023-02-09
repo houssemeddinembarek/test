@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/.netlify/functions/api", router);
 
 app.ws("/echo", (ws, res) => {
   ws.on("message", (msg) => {
